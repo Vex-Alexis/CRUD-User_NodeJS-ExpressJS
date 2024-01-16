@@ -1,0 +1,30 @@
+###Peticion para crear usuario
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Marquito Zuckerger",
+    "age": "34",
+    "email": "Zuckerger@facebook.com"
+}
+
+### Obtener todos los usuarios
+GET http://localhost:9000/api/users HTTP/1.1
+
+
+### Obtener un solo usuario
+GET http://localhost:9000/api/users/6317c6d11f080c2eab4e724b HTTP/1.1
+
+
+### Actualizar un usuario
+PUT http://localhost:9000/api/users/6317ca07bb9a8e69cbe6bfd1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Mark Zuckerger",
+    "age": "38",
+    "email": "Zuckerger@facebook.com"
+}
+
+### Eliminar usuario
+DELETE http://localhost:9000/api/users/6317cc3ca6f5b5642bdfb60d HTTP/1.1
